@@ -6,21 +6,24 @@ import UseCases from './components/UseCases';
 import Pricing from './components/Pricing';
 import CallToAction from './components/CallToAction';
 import Footer from './components/Footer';
+import { ThemeProvider } from './context/ThemeContext';
 
 function App() {
     return (
-        <div className="app">
-            <Navbar />
-            <main>
-                <Hero />
-                <SocialProof />
-                <Features />
-                <UseCases />
-                <Pricing />
-                <CallToAction />
-            </main>
-            <Footer />
-        </div>
+        <ThemeProvider>
+            <div className="app">
+                <Navbar />
+                <main>
+                    <Hero />
+                    <SocialProof />
+                    <Features />
+                    <UseCases />
+                    <Pricing />
+                    <CallToAction />
+                </main>
+                <Footer />
+            </div>
+        </ThemeProvider>
     );
 }
 
