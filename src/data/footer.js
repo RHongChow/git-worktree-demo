@@ -9,6 +9,7 @@ export const FOOTER_DATA = {
             links: [
                 { label: '功能總覽', href: '#features' },
                 { label: '方案價格', href: '#pricing' },
+                { label: '常見問題', href: '#faq' },
                 { label: '產品更新日誌', href: '#' },
                 { label: 'API 文件', href: '#' },
                 { label: '系統狀態', href: '#' },
